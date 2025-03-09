@@ -94,180 +94,181 @@ word_groups = {
         {"word": "people", "translation": "люди", "example": "People from different countries came to the event."}
     ]
 }
+d = {
+    1: (
+        "Добро пожаловать в Урок 1: Приветствия и прощания!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-1-Privetstviya-i-proshchaniya-01-09)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://wellemo.com/quiz/take/1efd34da-9fd0-6ac8-92ac-f1947c49ebe7/ru/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text1 = (
-    "Добро пожаловать в Урок 1: Приветствия и прощания!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-1-Privetstviya-i-proshchaniya-01-09)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://wellemo.com/quiz/take/1efd34da-9fd0-6ac8-92ac-f1947c49ebe7/ru/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    2: (
+        "Добро пожаловать в Урок 2: Образование множественного числа существительных!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-2-Obrazovanie-mnozhestvennogo-chisla-sushchestvitelnyh-01-16)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://myefe.ru/quizzes/tests-plurals)\n"
+        "    [Тест 2](https://englishweb.ru/grammar/plurals-test.html)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text2 = (
-    "Добро пожаловать в Урок 2: Образование множественного числа существительных!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-2-Obrazovanie-mnozhestvennogo-chisla-sushchestvitelnyh-01-16)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://myefe.ru/quizzes/tests-plurals)\n"
-    "    [Тест 2](https://englishweb.ru/grammar/plurals-test.html)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    3: (
+        "Добро пожаловать в Урок 3: Существительные, имеющие одну форму единственного и множественного числа!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-3-Sushchestvitelnye-imeyushchie-odnu-formu-edinstvennogo-i-mnozhestvennogo-chisla-02-01)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://englishka.ru/tests/test-mnozhestvennoe-chislo-sushchestvitelnyh-v-anglijskom-yazyke/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text3 = (
-    "Добро пожаловать в Урок 3: Существительные, имеющие одну форму единственного и множественного числа!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-3-Sushchestvitelnye-imeyushchie-odnu-formu-edinstvennogo-i-mnozhestvennogo-chisla-02-01)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://englishka.ru/tests/test-mnozhestvennoe-chislo-sushchestvitelnyh-v-anglijskom-yazyke/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    4: (
+        "Добро пожаловать в Урок 4: Исчисляемые и неисчисляемые  существительные!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-4-Okonchaniya-v-anglijskom-yazyke-02-01)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://englishweb.ru/grammar/count-nouns-test.html)\n"
+        "    [Тест 2](https://solncesvet.ru/tests/test-na-temu-ischislyaemye-i-neischislyaemye-sushchestvitelnye-v-angliyskom-yazyke/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text4 = (
-    "Добро пожаловать в Урок 4: Исчисляемые и неисчисляемые  существительные!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-4-Okonchaniya-v-anglijskom-yazyke-02-01)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://englishweb.ru/grammar/count-nouns-test.html)\n"
-    "    [Тест 2](https://solncesvet.ru/tests/test-na-temu-ischislyaemye-i-neischislyaemye-sushchestvitelnye-v-angliyskom-yazyke/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    5: (
+        "Добро пожаловать в Урок 5: Much и many в английском языке!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-6-Much-i-many-v-anglijskom-yazyke-02-03)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://thelang.ru/tests/much-many)\n"
+        "    [Тест 2](https://englishka.ru/tests/test-uprazhnenie-na-much-many-few-little/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text5 = (
-    "Добро пожаловать в Урок 5: Much и many в английском языке!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-6-Much-i-many-v-anglijskom-yazyke-02-03)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://thelang.ru/tests/much-many)\n"
-    "    [Тест 2](https://englishka.ru/tests/test-uprazhnenie-na-much-many-few-little/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    6: (
+        "Добро пожаловать в Урок 6: Слова a lot of, little, a little!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-7-Slova-a-lot-of-little-a-little-02-04)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://myefe.ru/quizzes/tests-few-little-many-much)\n"
+        "    [Тест 2](https://test-english.com/grammar-points/a1/much-many-lot-little-few/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text6 = (
-    "Добро пожаловать в Урок 6: Слова a lot of, little, a little!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-7-Slova-a-lot-of-little-a-little-02-04)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://myefe.ru/quizzes/tests-few-little-many-much)\n"
-    "    [Тест 2](https://test-english.com/grammar-points/a1/much-many-lot-little-few/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    7: (
+        "Добро пожаловать в Урок 7: Слова few, a few!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-8-Slova-few-a-few-02-04)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://myefe.ru/quizzes/tests-few-little-many-much/test-1)\n"
+        "    [Тест 2](https://www.native-english.ru/tests/little-a-little-few-a-few)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text7 = (
-    "Добро пожаловать в Урок 7: Слова few, a few!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-8-Slova-few-a-few-02-04)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://myefe.ru/quizzes/tests-few-little-many-much/test-1)\n"
-    "    [Тест 2](https://www.native-english.ru/tests/little-a-little-few-a-few)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    8: (
+        "Добро пожаловать в Урок 8: Артикли в английском языке!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-9-Artikli-v-anglijskom-yazyke-02-04)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://englishweb.ru/grammar/test/test-articles.html)\n"
+        "    [Тест 2](https://englishka.ru/tests/test-na-artikli-v-anglijskom/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text8 = (
-    "Добро пожаловать в Урок 8: Артикли в английском языке!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-9-Artikli-v-anglijskom-yazyke-02-04)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://englishweb.ru/grammar/test/test-articles.html)\n"
-    "    [Тест 2](https://englishka.ru/tests/test-na-artikli-v-anglijskom/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    9: (
+        "Добро пожаловать в Урок 9: Специальные случаи употребления артиклей!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-10-Specialnye-sluchai-upotrebleniya-artiklej-02-05)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://engblog.ru/test-articles-1)\n"
+        "    [Тест 2](https://www.native-english.ru/tests/articles)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text9 = (
-    "Добро пожаловать в Урок 9: Специальные случаи употребления артиклей!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-10-Specialnye-sluchai-upotrebleniya-artiklej-02-05)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://engblog.ru/test-articles-1)\n"
-    "    [Тест 2](https://www.native-english.ru/tests/articles)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    10: (
+        "Добро пожаловать в Урок 10: Оборот There + to be!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-11-Oborot-There--to-be-02-06)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://onlinetestpad.com/ru/test/308614-there-to-be)\n"
+        "    [Тест 2](https://upupenglish.ru/there-is-are-exercises/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text10 = (
-    "Добро пожаловать в Урок 10: Оборот There + to be!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-11-Oborot-There--to-be-02-06)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://onlinetestpad.com/ru/test/308614-there-to-be)\n"
-    "    [Тест 2](https://upupenglish.ru/there-is-are-exercises/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    11: (
+        "Добро пожаловать в Урок 11: Степени сравнения прилагательных!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-12-Stepeni-sravneniya-prilagatelnyh-02-07)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://englishweb.ru/grammar/comparatives-test.html)\n"
+        "    [Тест 2](https://englishka.ru/tests/test-na-stepeni-sravneniya-v-anglijskom/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text11 = (
-    "Добро пожаловать в Урок 11: Степени сравнения прилагательных!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-12-Stepeni-sravneniya-prilagatelnyh-02-07)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://englishweb.ru/grammar/comparatives-test.html)\n"
-    "    [Тест 2](https://englishka.ru/tests/test-na-stepeni-sravneniya-v-anglijskom/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    12: (
+        "Добро пожаловать в Урок 12: Сравнительные обороты!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-13-Sravnitelnye-oboroty-02-07)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://engblog.ru/test-degrees-of-comparison)\n"
+        "    [Тест 2](https://www.native-english.ru/tests/degrees-of-comparison)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text12 = (
-    "Добро пожаловать в Урок 12: Сравнительные обороты!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-13-Sravnitelnye-oboroty-02-07)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://engblog.ru/test-degrees-of-comparison)\n"
-    "    [Тест 2](https://www.native-english.ru/tests/degrees-of-comparison)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    13: (
+        "Добро пожаловать в Урок 13: Степени сравнения наречий!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-14-Stepeni-sravneniya-narechij-02-07)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://englika.ru/tests/test-na-stepeni-sravnenija-narechij-v-anglijskom-jazyke)\n"
+        "    [Тест 2](https://skyeng.ru/exercises/adverbs-degrees-of-comparison/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text13 = (
-    "Добро пожаловать в Урок 13: Степени сравнения наречий!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-14-Stepeni-sravneniya-narechij-02-07)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://englika.ru/tests/test-na-stepeni-sravnenija-narechij-v-anglijskom-jazyke)\n"
-    "    [Тест 2](https://skyeng.ru/exercises/adverbs-degrees-of-comparison/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    14: (
+        "Добро пожаловать в Урок 14: Простое настоящее время. Present Simple!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-15-Prostoe-nastoyashchee-vremya-Present-Simple-02-07)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://myefe.ru/quizzes/tests-present-simple)\n"
+        "    [Тест 2](https://englishweb.ru/grammar/test/test-present-simple-beginner.html)\n"
+        "    [Тест 3](https://englishka.ru/tests/test-na-present-simple/)\n"
+        "    [Тест 4](https://skyeng.ru/testy-po-anglijskomu-yazyku/present-simple/)\n"
+        "    [Тест 5](https://ru.stegmax.com/tests/present-simple-placement-test-elementary/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text14 = (
-    "Добро пожаловать в Урок 14: Простое настоящее время. Present Simple!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-15-Prostoe-nastoyashchee-vremya-Present-Simple-02-07)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://myefe.ru/quizzes/tests-present-simple)\n"
-    "    [Тест 2](https://englishweb.ru/grammar/test/test-present-simple-beginner.html)\n"
-    "    [Тест 3](https://englishka.ru/tests/test-na-present-simple/)\n"
-    "    [Тест 4](https://skyeng.ru/testy-po-anglijskomu-yazyku/present-simple/)\n"
-    "    [Тест 5](https://ru.stegmax.com/tests/present-simple-placement-test-elementary/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    15: (
+        "Добро пожаловать в Урок 15: Настоящее длительное время. Present Continuous!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-16-Nastoyashchee-dlitelnoe-vremya-Present-Continuous-02-07)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://myefe.ru/?s=Present%20Continuous&msui_c=quiz)\n"
+        "    [Тест 2](https://englishweb.ru/grammar/test/test-present-continuous.html)\n"
+        "    [Тест 3](https://puzzle-english.com/level-test/present-continuous)\n"
+        "    [Тест 4](https://ru.stegmax.com/tests/present-continuous-placement-test-elementary/)\n"
+        "    [Тест 5](https://www.memorysecrets.ru/english/en-tests/test-po-anglijskomu-yazyku-present-continuous.html)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text15 = (
-    "Добро пожаловать в Урок 15: Настоящее длительное время. Present Continuous!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-16-Nastoyashchee-dlitelnoe-vremya-Present-Continuous-02-07)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://myefe.ru/?s=Present%20Continuous&msui_c=quiz)\n"
-    "    [Тест 2](https://englishweb.ru/grammar/test/test-present-continuous.html)\n"
-    "    [Тест 3](https://puzzle-english.com/level-test/present-continuous)\n"
-    "    [Тест 4](https://ru.stegmax.com/tests/present-continuous-placement-test-elementary/)\n"
-    "    [Тест 5](https://www.memorysecrets.ru/english/en-tests/test-po-anglijskomu-yazyku-present-continuous.html)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    16: (
+        "Добро пожаловать в Урок 16: Простое прошедшее время. Past Simple!\n\n"
+        "Изучите материалы урока, перейдя по ссылке ниже:\n"
+        "[Теоритическая часть](https://telegra.ph/Urok-17-02-08)\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://myefe.ru/quizzes/tests-past-simple)\n"
+        "    [Тест 2](https://skyeng.ru/exercises/ed/)\n"
+        "    [Тест 3](https://ru.stegmax.com/tests/past-simple-placement-test-elementary/)\n"
+        "    [Тест 4](https://puzzle-english.com/level-test/past-simple-test)\n"
+        "    [Тест 5](https://englishweb.ru/grammar/test/test-past-simple.html)\n"
+        "    [Тест 6](https://lim-english.com/tests/test-na-past-simple/)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    ),
 
-lesson_text16 = (
-    "Добро пожаловать в Урок 16: Простое прошедшее время. Past Simple!\n\n"
-    "Изучите материалы урока, перейдя по ссылке ниже:\n"
-    "[Теоритическая часть](https://telegra.ph/Urok-17-02-08)\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://myefe.ru/quizzes/tests-past-simple)\n"
-    "    [Тест 2](https://skyeng.ru/exercises/ed/)\n"
-    "    [Тест 3](https://ru.stegmax.com/tests/past-simple-placement-test-elementary/)\n"
-    "    [Тест 4](https://puzzle-english.com/level-test/past-simple-test)\n"
-    "    [Тест 5](https://englishweb.ru/grammar/test/test-past-simple.html)\n"
-    "    [Тест 6](https://lim-english.com/tests/test-na-past-simple/)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
-
-lesson_text17 = (
-    "Добро пожаловать в Урок 17: Практика по пройденным временам!\n\n"
-    "Практическая часть:\n"
-    "    [Тест 1](https://wordwall.net/resource/13706334/present-simple-present-continuous-past-simple)\n"
-    "    [Тест 2](https://skyeng.ru/exercises/present-simple-present-continuous-past-simple/)\n"
-    "    [Тест 3](https://testedu.ru/test/english-language/7-klass/present-simplepresent-continuouspast-simplepast-continuous.html)\n"
-    "[Словарь](https://wooordhunt.ru/)"
-)
+    17: (
+        "Добро пожаловать в Урок 17: Практика по пройденным временам!\n\n"
+        "Практическая часть:\n"
+        "    [Тест 1](https://wordwall.net/resource/13706334/present-simple-present-continuous-past-simple)\n"
+        "    [Тест 2](https://skyeng.ru/exercises/present-simple-present-continuous-past-simple/)\n"
+        "    [Тест 3](https://testedu.ru/test/english-language/7-klass/present-simplepresent-continuouspast-simplepast-continuous.html)\n"
+        "[Словарь](https://wooordhunt.ru/)"
+    )
+}

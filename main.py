@@ -144,56 +144,8 @@ async def lesson_handler(callback_query: types.CallbackQuery):
     if lesson_number > max_unlocked:
         await callback_query.answer("Этот урок пока недоступен.", show_alert=True)
     else:
-        if lesson_number == 1:
-            lesson_text = lesson_text1
-
-        elif lesson_number == 2:
-            lesson_text = lesson_text2
-
-        elif lesson_number == 3:
-            lesson_text = lesson_text3
-
-        elif lesson_number == 4:
-            lesson_text = lesson_text4
-
-        elif lesson_number == 5:
-            lesson_text = lesson_text5
-
-        elif lesson_number == 6:
-            lesson_text = lesson_text6
-
-        elif lesson_number == 7:
-            lesson_text = lesson_text7
-
-        elif lesson_number == 8:
-            lesson_text = lesson_text8
-
-        elif lesson_number == 9:
-            lesson_text = lesson_text9
-
-        elif lesson_number == 10:
-            lesson_text = lesson_text10
-
-        elif lesson_number == 11:
-            lesson_text = lesson_text11
-
-        elif lesson_number == 12:
-            lesson_text = lesson_text12
-
-        elif lesson_number == 13:
-            lesson_text = lesson_text13
-
-        elif lesson_number == 14:
-            lesson_text = lesson_text14
-
-        elif lesson_number == 15:
-            lesson_text = lesson_text15
-
-        elif lesson_number == 16:
-            lesson_text = lesson_text16
-
-        elif lesson_number == 17:
-            lesson_text = lesson_text17
+        if lesson_number:
+            lesson_text = d[lesson_number]
         else:
             lesson_name = get_lesson_name(lesson_number)
             lesson_text = f"Вы открыли Урок {lesson_number}!"
