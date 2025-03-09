@@ -37,7 +37,6 @@ def get_main_menu(user_id):
     menu = InlineKeyboardMarkup(inline_keyboard=[
         [InlineKeyboardButton(text="Переводчик", callback_data="translator")],
         [InlineKeyboardButton(text="Карточки с новыми словами", callback_data="word_cards")],
-        [InlineKeyboardButton(text="Подкасты", callback_data="podcasts")],
         *[[button] for button in lesson_buttons]
     ])
     return menu
@@ -124,7 +123,7 @@ async def group_handler(callback_query: types.CallbackQuery):
         card = random.choice(user_remaining_cards[user_id][group_name])
         user_remaining_cards[user_id][group_name].remove(card)
         await callback_query.message.answer(
-            f"Слово: {card['word']}\nПеревод: {card['translation']}\nПример: {card['example']}",
+            f"Слово: {card['word']}\nПеревод: {card['translation']}\nПример: {card['example']}\nПеревод примера: {card['translation2']}",
             reply_markup=get_card_buttons(group_name)
         )
     else:
@@ -186,7 +185,7 @@ async def next_card(callback_query: types.CallbackQuery):
         remaining_cards.remove(card)
         user_remaining_cards[user_id][group_name] = remaining_cards
 
-        new_text = f"Слово: {card['word']}\nПеревод: {card['translation']}\nПример: {card['example']}"
+        new_text = f"Слово: {card['word']}\nПеревод: {card['translation']}\nПример: {card['example']}\nПеревод примера: {card['translation2']}"
         await bot.send_message(
             chat_id=callback_query.from_user.id,
             text=new_text,
