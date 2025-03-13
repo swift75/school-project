@@ -1,18 +1,19 @@
-from aiogram import Bot, Dispatcher, types
 from aiogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 from aiogram.filters.command import Command
-import random
+from aiogram import Bot, Dispatcher, types
 from googletrans import Translator
+from consts import *
+import random
 import asyncio
 import sqlite3
-from consts import *
 
-API_TOKEN = "7340266796:AAHsWoJi0GDhFDNb7hon7BcJB187L3I3MWY"
+API_TOKEN = "***"
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher()
 translator = Translator()
 conn = sqlite3.connect('progress.db')
 cursor = conn.cursor()
+user_translation_mode = set()
 
 cursor.execute('''
 CREATE TABLE IF NOT EXISTS user_progress (
@@ -90,19 +91,21 @@ async def send_welcome(message: types.Message):
 
 @dp.callback_query(lambda c: c.data == "translator")
 async def translator_section(callback_query: types.CallbackQuery):
-    await callback_query.message.answer("Введите текст для перевода (с русского на английский):",
-                                        reply_markup=get_back_button())
+    user_id = callback_query.from_user.id
+    user_translation_mode.add(user_id)  # Включаем режим перевода
+    await callback_query.message.answer("Введите текст для перевода (с русского на английский):", reply_markup=get_back_button())
 
 
 @dp.message()
 async def translate_message(message: types.Message):
-    try:
-        result = translator.translate(message.text, src="auto")
-        translation = f"Перевод: {result.text}"
-        await message.reply(translation, reply_markup=get_back_button())
-    except Exception:
-        await message.reply("Произошла ошибка при переводе. Попробуйте ещё раз.", reply_markup=get_back_button())
-
+    user_id = message.from_user.id
+    if user_id in user_translation_mode:
+        try:
+            result = translator.translate(message.text, src="auto", dest="en")
+            translation = f"Перевод: {result.text}"
+            await message.reply(translation, reply_markup=get_back_button())
+        except Exception:
+            await message.reply("Ошибка при переводе.", reply_markup=get_back_button())
 
 @dp.callback_query(lambda c: c.data == "word_cards")
 async def word_cards_section(callback_query: types.CallbackQuery):
@@ -123,7 +126,7 @@ async def group_handler(callback_query: types.CallbackQuery):
         card = random.choice(user_remaining_cards[user_id][group_name])
         user_remaining_cards[user_id][group_name].remove(card)
         await callback_query.message.answer(
-            f"Слово: {card['word']}\nПеревод: {card['translation']}\nПример: {card['example']}\nПеревод примера: {card['translation2']}",
+            f"Слово/выражение: {card['word']}\nПеревод: {card['translation']}\nПример: {card['example']}\nПеревод примера: {card['translation2']}",
             reply_markup=get_card_buttons(group_name)
         )
     else:
@@ -185,7 +188,7 @@ async def next_card(callback_query: types.CallbackQuery):
         remaining_cards.remove(card)
         user_remaining_cards[user_id][group_name] = remaining_cards
 
-        new_text = f"Слово: {card['word']}\nПеревод: {card['translation']}\nПример: {card['example']}\nПеревод примера: {card['translation2']}"
+        new_text = f"Слово/выражение: {card['word']}\nПеревод: {card['translation']}\nПример: {card['example']}\nПеревод примера: {card['translation2']}"
         await bot.send_message(
             chat_id=callback_query.from_user.id,
             text=new_text,
@@ -198,7 +201,8 @@ async def next_card(callback_query: types.CallbackQuery):
 @dp.callback_query(lambda c: c.data == "back_to_menu")
 async def back_to_menu(callback_query: types.CallbackQuery):
     user_id = callback_query.from_user.id
-    await callback_query.message.answer("Выбери раздел:", reply_markup=get_main_menu(user_id))
+    user_translation_mode.discard(user_id)
+    await callback_query.message.answer("Выберите раздел:", reply_markup=get_main_menu(user_id))
 
 
 @dp.callback_query(lambda c: c.data.startswith("lesson_"))
