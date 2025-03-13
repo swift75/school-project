@@ -92,7 +92,7 @@ async def send_welcome(message: types.Message):
 @dp.callback_query(lambda c: c.data == "translator")
 async def translator_section(callback_query: types.CallbackQuery):
     user_id = callback_query.from_user.id
-    user_translation_mode.add(user_id)  # Включаем режим перевода
+    user_translation_mode.add(user_id)
     await callback_query.message.answer("Введите текст для перевода (с русского на английский):", reply_markup=get_back_button())
 
 
